@@ -1,0 +1,80 @@
+@layer base, splide;
+
+@layer splide {
+  .splide {
+    max-width: min(100%, 860px);
+    margin: 3rem auto 0;
+  }
+}
+
+@layer base {
+  :where(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Pacifico", cursive;
+  }
+
+  .audio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2ch;
+  }
+
+  .audio__player {
+    max-width: 300px;
+  }
+
+  img {
+    display: block;
+    margin-inline: auto;
+    width: min(340px, 100%);
+    object-fit: cover;
+  }
+
+  pre {
+    font-size: 1.2rem;
+    margin-top: 2ch;
+  }
+
+  p {
+    white-space: pre-line;
+  }
+
+  :is(.audio__title, .audio__player) {
+    flex: 1 0 100%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-block: 2ch 1ch;
+  }
+}

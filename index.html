@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nossas musicas</title>
+  </head>
+  <body>
+    <header class="heading"><h1>Nossas Musicas</h1></header>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="audio">
+              <h2 class="audio__title">Vanguart - Meu sol</h2>
+              <img
+                src="/vanguart-muito_mais_que_amor.jpg"
+                alt=""
+                width="300"
+                height="300"
+                class="audio_cover"
+              />
+              <div class="audio__lyrics">
+                <h3>Parte que me lembra você:</h3>
+                <p>
+                  Eu já Me preparei demais
+                  E declaro, agora é a hora
+                  O amor profundo, o amor que salva
+                  Vem depressa, não demora
+                </p>
+              </div>
+              <audio
+                class="audio__player"
+                src="/vanguart-meu_sol.mp3"
+                controls
+                loop
+              ></audio>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="audio">
+              <h2 class="audio__title">Vanguart - Demorou pra ser</h2>
+              <img
+                src="/vanguart-muito_mais_que_amor.jpg"
+                alt=""
+                width="300"
+                height="300"
+              />
+              <div class="audio__lyrics">
+                <h3>Parte que me lembra você:</h3>
+                <p>
+                  Enquanto a gente ainda tiver
+                  Um coração tão cheio
+                  Tão cheio de amanhã
+                  Vê? Meu coração tão cheio
+                  Estou aqui
+                </p>
+              </div>
+              <audio
+                class="audio__player"
+                src="/vanguart-demorou_pra_ser.mp3"
+                controls
+                loop
+              ></audio>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="audio">
+              <h2 class="audio__title">Incubus - Echo</h2>
+              <img src="/incubus-echo.jpg" alt="" width="300" height="300" />
+              <div class="audio__lyrics">
+                <h3>Parte que me lembra você:</h3>
+                <p>
+                  There's something about the look in your eyes
+                  Something I noticed when the light was just right
+                  Uh, it reminded me twice that I was alive
+                  And it reminded me that you're so worth the fight
+                </p>
+              </div>
+              <audio
+                class="audio__player"
+                src="/incubus-echo.mp3"
+                controls
+                loop
+              ></audio>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>By Camis to Mirna</footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
