@@ -74,7 +74,7 @@
   footer {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: auto;
     padding-block: 2ch 1ch;
   }
 }
